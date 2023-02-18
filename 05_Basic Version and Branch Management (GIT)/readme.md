@@ -1,0 +1,14 @@
+## Resume Materi KMFlutter – Basic Version and Branch Management (Git)
+- Git merupakan version control system yang digunakan para developer unutk mengembangkan software secara bersama-sama.
+- Dalam pengerjaan project menggunakan git dan github. area terbagi tiga yaitu:
+  - working directory
+  - staging area
+  - repository
+- Query Git yang umum dipakai antara lain:
+  - git init untuk membuat reository baru.
+  - git clone untuk menyalin repositry project.
+  - git branch untuk membuat cabang yang biasanya berdasarkan fitur aplikasi.
+  - git add untuk menambahkan perubahan ke staging area.
+  - git commit untuk memberi pesan terhadap perubahan yang dilakukan.
+  - git push untuk mengirimkan perubahan di working directory ke repository.
+  - git pull untuk mengambil perubahan yang ada di repository ke local.
