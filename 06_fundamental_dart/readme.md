@@ -1,0 +1,16 @@
+## Resume Materi KMFlutter – Fundamental Dart
+- Bahasa pemrograman Dart dipilih dan digunakan karena memiliki beberapa keunggulan antara lain:
+  - Type safe: menjamin konsistensi data.
+  - Null safety: memberi keamanan data bernilai null.
+  - Rich standard library: memiliki banyak dukungan library internal.
+  - Multiplatform: mamapu berjalan di berbagai jenis perangkat.
+- Tipe data merupakan jenis data yang dapat dikelola. Tipe data di bahasa pemrograman Dart antara lain:
+  - int: bilangan bulat.
+  - double: bilangan pecahan.
+  - bool: true/false.
+  - string: teks
+- Operator digunakan unutk pengolahan data. Operator di Dart antara lain:
+  - Arithmatic: untuk perhitungan matematis -> + _ - _ * _ / _ %
+  - Assignment: memberi nilai pada variable -> = _ += _ -= _ *= _ /= _ %=
+  - Comparison: membandingkan kesetaraan nilai -> == _ < _ > _ <= _ >=
+  - Logical: menggabungkan beberapa kondisi -> && _ || _ !
