@@ -1,4 +1,4 @@
-## Resume Materi – Deep Dive Into Dart Object Oriented Programmin
+## Resume Materi – Deep Dive Into Dart Object Oriented Programming
 ### Cunstructor
   - Method dijalankan saat pembuatan objec
   - dapat menerima paramete
