@@ -1,9 +1,9 @@
 ## Resume Materi KMFlutter – Dialog Bottom Sheet
 ### AlertDialog
-- untuk tampilan android dari material design
-- menginformasikan pengguna tentang situasi tertentu
-- bisa digunakan untuk input dari user
-- membutuhkan helper method showDialog
+- untuk tampilan android dari material design.
+- menginformasikan pengguna tentang situasi tertentu.
+- bisa digunakan untuk input dari user.
+- membutuhkan helper method showDialog.
 ```
   // Membuat fungsi dialog
   void _showDialog() {

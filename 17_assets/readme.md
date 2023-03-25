@@ -10,9 +10,9 @@
   - pubspec.yaml terletak pada root project, untuk mengidentifikasi assets yang dibutuhkan
   - gunakan karakter '/' untuk memasukkan semua asset dibawah satu direktori
   ```
-  assets:
-    - assets/images/
-    - assets/icons/
+    assets:
+      - assets/images/
+      - assets/icons/
   ```
 
 ### Images
