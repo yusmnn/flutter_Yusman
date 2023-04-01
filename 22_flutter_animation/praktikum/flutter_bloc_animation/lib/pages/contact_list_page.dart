@@ -4,6 +4,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:intl/intl.dart';
 
 import '../bloc/contact_bloc.dart';
+import 'contact_update_page.dart';
 import 'contacts_form_page.dart';
 
 class ContactListPage extends StatelessWidget {
@@ -93,41 +94,7 @@ class ContactList extends StatelessWidget {
                         children: [
                           IconButton(
                             onPressed: () {
-                              showDialog(
-                                context: context,
-                                builder: (BuildContext context) {
-                                  return AlertDialog(
-                                    title: const Text('Ganti Contact'),
-                                    content: Column(
-                                      mainAxisSize: MainAxisSize.min,
-                                      children: const <Widget>[
-                                        TextField(
-                                          decoration: InputDecoration(
-                                              labelText: 'Nama'),
-                                        ),
-                                        TextField(
-                                          decoration: InputDecoration(
-                                              labelText: 'Nomor'),
-                                        ),
-                                      ],
-                                    ),
-                                    actions: <Widget>[
-                                      TextButton(
-                                        onPressed: () {
-                                          Navigator.of(context).pop();
-                                        },
-                                        child: const Text('Save'),
-                                      ),
-                                      TextButton(
-                                        onPressed: () {
-                                          Navigator.of(context).pop();
-                                        },
-                                        child: const Text('Cancel'),
-                                      ),
-                                    ],
-                                  );
-                                },
-                              );
+                              Navigator.of(context).push(_createRouteUpdate());
                             },
                             icon: SvgPicture.asset(
                               'assets/icons/mode_edit.svg',
@@ -172,6 +139,28 @@ Route _createRouteBack() {
     transitionDuration: const Duration(milliseconds: 3000),
     pageBuilder: (context, animation, secondaryAnimation) =>
         const ContactFormPage(),
+    transitionsBuilder: (context, animation, secondaryAnimation, child) {
+      const begin = Offset(0.0, 1.0);
+      const end = Offset.zero;
+      const curve = Curves.elasticOut;
+
+      var tween = Tween(begin: begin, end: end).chain(
+        CurveTween(curve: curve),
+      );
+
+      return SlideTransition(
+        position: animation.drive(tween),
+        child: child,
+      );
+    },
+  );
+}
+
+Route _createRouteUpdate() {
+  return PageRouteBuilder(
+    transitionDuration: const Duration(milliseconds: 3000),
+    pageBuilder: (context, animation, secondaryAnimation) =>
+        const UpdateContactPage(),
     transitionsBuilder: (context, animation, secondaryAnimation, child) {
       const begin = Offset(0.0, 1.0);
       const end = Offset.zero;
