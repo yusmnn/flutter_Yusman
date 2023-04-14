@@ -124,11 +124,11 @@
       ```
 
 ### Mocking
-  - proses yang terikat dengan dengan sistem eksternal dapat mempengaruhi berjalannya ujian
+  - proses yang terikat dengan sistem eksternal dapat mempengaruhi berjalannya ujian
   - Pengaruh tersebut dapat mengganggu proses pengujian
-  - dilakukan mocking unutk menghindari masalah-masalah tersebut
+  - dilakukan mocking untuk menghindari masalah-masalah tersebut
   - cara kerja mocking:
-    - suatu ibject dibuat tiruannya
+    - suatu object dibuat tiruannya
     - bentuk tiruan tersebut memiliki input dan output yang sama dengan yang asli
     - bentuk tiruan menghilangkan ketergantungan pada sistem eksternal
   - menambahkan ``` mockito ``` dan ``` build_runner ``` pada bagian dev_dependencies di file pubspec.yaml
