@@ -7,6 +7,10 @@
 ### Soal Prioritas 2 (20)
 - Lakukan testing UI pada halaman yang belum pernah dibuat!
 
+### ScreenShot
+![ss_ui_test_wisata_app](https://user-images.githubusercontent.com/76932249/232575897-1784da3d-9a50-413a-9953-f61e94ce7af2.png)
+
+
 ### Soal Eksplorasi (20)
 1. Silahkan pilih aplikasi yang telah dikembangkan.
 2. Lakukan UI Testing pada aplikasi yang telah dikembangkan. Pastikan semua fitur dilakukan UI Testing.
